@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Churrascômetro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class = "text">
+        <h1 id="title">Seja bem-vindo ao Churrascômetro</h1>
+
+        <p>O Churrascômetro é uma programa que te ajuda a calcular a quantidade de 
+            comidas e bebidas para o seu churrasco. Para isso, basta preencher qual 
+            a quantidade de adultos, adultos que bebem cerveja e crianças que estarão 
+            presentes, além da duração do evento em horas.
+        </p>
+
+        <p>Esperamos que tenha uma boa experiência com o Churrascômetro. Use e aproveite!</p>
+    </div>
+
+    <div class="board">
+        <h1>Churrascômetro</h1>
+
+        <input id="adults" name="adults" type="number" placeholder="Adultos">
+        <input id="whoDrinks" name="whoDrinks" type="number" placeholder="Adultos que bebem cerveja">
+        <input id="children" name="children" type="number" placeholder="Crianças">
+        <input id="duration" name="duration" type="number" placeholder="Duração (h)">
+
+        <button onclick="calc()">Calcular</button>
+
+        <div id="result"></div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
